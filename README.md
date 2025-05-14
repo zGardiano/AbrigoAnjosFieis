@@ -26,7 +26,7 @@ O site tem como público-alvo pessoas e famílias que desejam adotar um animal, 
 
 O site é composto pelas seguintes páginas/seções:
 
-##1. Página Inicial
+## 1. Página Inicial
 - Apresentação da ONG e missão
 - Destaques: cães para adoção, campanhas e novidades
 
