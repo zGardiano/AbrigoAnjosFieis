@@ -26,7 +26,7 @@ O site tem como público-alvo pessoas e famílias que desejam adotar um animal, 
 
 O site é composto pelas seguintes páginas/seções:
 
-#1. Página Inicial
+##1. Página Inicial
 - Apresentação da ONG e missão
 - Destaques: cães para adoção, campanhas e novidades
 
@@ -35,14 +35,14 @@ O site é composto pelas seguintes páginas/seções:
 - Sistema de busca e filtros (por porte, idade ou temperamento)
 - Ferramenta interna para cadastro, edição e remoção de cães (futura implementação)
 
-### 3. Sobre Nós
+## 3. Sobre Nós
 - História da ONG
 - Objetivos, desafios e conquistas
 
-#### 4. Doações
+## 4. Doações
 - Instruções para doar via Pix, transferência, etc.
 - Informações sobre a utilização dos recursos
 - Depoimentos de adotantes e voluntários
 
-##### 5. Contato
+## 5. Contato
 - Telefone, e-mail, redes sociais e endereço
