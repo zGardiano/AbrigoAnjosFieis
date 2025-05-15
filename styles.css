@@ -1,0 +1,106 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff0c9;
+    color: #2e2e2e;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: #d49a69;
+    padding: 20px;
+}
+header h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+nav ul li a {
+    color: #301e14;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #2e2e2e;
+    color: #2e2e2e;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+main {
+    flex: 1;
+    padding: 40px 20px 60px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+main h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+main p {
+    font-size: 1.15rem;
+    line-height: 1.55;
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+}
+footer {
+    background-color: #d49a69;
+    text-align: center;
+    padding: 15px 5px;
+    font-size: 0.9rem;
+    color: #2e2e2e;
+    letter-spacing: 0.05em;
+    user-select: none;
+}
+footer a {
+    color: #301e14;
+    text-decoration: none;
+    font-weight: 600;
+}
+footer a:hover,
+footer a:focus {
+    text-decoration: underline;
+    outline: none;
+}
+@media (max-width: 500px) {
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+    main {
+        padding: 30px 15px 50px;
+    }
+    main h2 {
+        font-size: 1.75rem;
+    }
+    main p {
+        font-size: 1rem;
+    }
+}
+
