@@ -1,0 +1,43 @@
+/* layout.css */
+
+header {
+  background-color: #05393E;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #05393E;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.footer-columns div {
+  margin: 0.5rem;
+}
+
+.footer-img {
+  background: url('https://i.imgur.com/kXcM8dt.png') repeat-x bottom;
+  height: 60px;
+}
