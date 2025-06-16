@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #043B4C;
+  background-color: #05393E;
   color: white;
   text-align: center;
   padding: 1rem 0;
@@ -30,13 +30,13 @@ nav ul li a {
   color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
-  background-color: #0097A7;
+  background-color: #17838c;
   border-radius: 4px;
   font-size: 0.9rem;
 }
 
 nav ul li a:hover {
-  background-color: #006064;
+  background-color: #0D5D63;
 }
 
 section {
@@ -47,7 +47,7 @@ section {
 }
 
 section h2 {
-  color: #006064;
+  color: #0D5D63;
   margin-bottom: 1rem;
   letter-spacing: 1px;
 }
@@ -72,27 +72,32 @@ section p {
 }
 
 footer {
-  background-color: #043B4C;
+  background-color: #05393E;
   color: white;
   text-align: center;
-  padding: 2rem 1rem;
-  margin-top: 3rem;
+  padding: 1rem;
+  margin-top: 2rem;
 }
 
-footer a {
-  color: white;
-  text-decoration: none;
-  display: block;
-  margin: 0.3rem 0;
-}
-
-.footer-content {
-  max-width: 800px;
-  margin: 0 auto 1rem auto;
+.footer-columns {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
-  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+.footer-column div {
+  margin: 0.5rem;
+}
+
+.footer_img {
+  background: url('https://i.imgur.com/kXcM8dt.png')
+  repeat-x bottom;
+  height: 60px;
+}
+
+footer p{
+  text-align: center;
 }
 
 @media (min-width: 768px) {
