@@ -19,6 +19,7 @@ O site tem como público-alvo pessoas e famílias que desejam adotar um animal, 
 
 - HTML5
 - CSS3
+- JavaScript
 - Visual Studio Code (ambiente de desenvolvimento)
 
 ==========Estrutura do site==========

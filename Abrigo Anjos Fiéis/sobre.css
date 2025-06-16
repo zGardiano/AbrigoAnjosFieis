@@ -10,6 +10,7 @@ header {
   color: white;
   text-align: center;
   padding: 1rem 0;
+  height: 88px;
 }
 
 header h1 {
@@ -23,7 +24,7 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
 }
 
 nav ul li a {
@@ -58,6 +59,14 @@ section p {
   margin-bottom: 1rem;
 }
 
+.pegadas{
+  position: absolute;
+  left: -0px;
+  margin-left: 250;
+  top: 30%;
+  opacity: 0.8;
+}
+
 .image-text-block {
   display: flex;
   flex-direction: column;
@@ -71,12 +80,20 @@ section p {
   height: auto;
 }
 
+.pegadas-direita {
+  position: absolute;
+  right: 0px;
+  margin-left: 250;
+  top: 30%;
+  opacity: 0.8;
+  margin-top: 500px;
+}
+
 footer {
   background-color: #05393E;
   color: white;
   text-align: center;
   padding: 1rem;
-  margin-top: 2rem;
 }
 
 .footer-columns {
@@ -90,10 +107,9 @@ footer {
   margin: 0.5rem;
 }
 
-.footer_img {
-  background: url('https://i.imgur.com/kXcM8dt.png')
-  repeat-x bottom;
-  height: 60px;
+footer a{
+  text-decoration: none;
+  color: white;
 }
 
 footer p{
