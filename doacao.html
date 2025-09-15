@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="doacao.css">
+  <title>ONG Abrigo Anjos Fiéis - Doações</title>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>ONG Abrigo Anjos Fiéis</h1>
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="caes.html">Cães</a></li>
+          <li><a href="doacao.html">Doação</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="introducao">
+      <h2>Como Ajudar?</h2>
+      <p>Atualmente os animais comem em média 5 sacos de ração por dia, fora as medicações e vacinas. O local é limpo todos os dias pois é um ambiente ao céu livre, diarreias, mosquitos da dengue e carrapatos. E, para mantermos o abrigo nessas condições, precisamos da sua ajuda!</p>
+    </section>
+    
+    <img src="assets/header-footer/patinhas.png" alt="Pegadas decorativas" class="pegadas">
+
+    <section class="doacao-section">
+      <div class="qrcode-container">
+        <div class="qr-wrapper">
+          <img src="assets/Doacoes/qr-num.jpeg" alt="QR Code para doação" class="qrcode">
+        </div>
+        <div class="qrcode-texto">
+          <h3>💝 Faça sua doação</h3>
+          <p>Para manter o abrigo e os cães nesses cuidados, contamos com a sua doação! Qualquer valor já ajuda com gastos totalmente diários com cães de resgate, vacinas, medicamentos, vermífugos, obesidade, além de funcionários.</p>
+          <div class="pix-info">
+            <strong>PIX:</strong> Escaneie o QR Code ou use a chave PIX
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <img src="assets/header-footer/patinhas.png" alt="Pegadas" class="pegadas-direita">
+
+    <section class="visit-section">
+      <h3>📍 Faça uma Visita!</h3>
+      <div class="mapa-container">
+        <img src="assets/Doacoes/mapa.png" alt="Mapa da localização" class="mapa">
+      </div>
+      
+      <div class="endereco-info">
+        <div class="endereco">
+          <h4>📍 Endereço do abrigo:</h4>
+          <p>
+            <strong>ESTRADA DA AMORA 1301</strong><br>
+            Loteamento EDEM LESTE<br>
+            Zona Rural de Engenheiro Schmidt
+          </p>
+        </div>
+        
+        <div class="como-chegar">
+          <h4>🗺️ Como chegar:</h4>
+          <p>Ao chegar em Schmidt, siga até o final da Rua Coutinho Cavalcanti, onde há um campo de futebol. No fim da rua, contorne a rotatória e entre na estrada de terra à esquerda (Estrada Amora). Maza tem um letreiro grande em frente à entrada da estrada de terra, com uma placa azul com letras brancas escrito Edem Leste.</p>
+          
+          <p>Siga sempre em frente. Quando avistar um plantio de milho (ou soja), verá uma placa laranja com os dizeres "Bem-vindos ao loteamento Edem Leste".</p>
+          
+          <p>Essa placa é um mapa. Não suba: continue reto pela Estrada do Cedro.</p>
+          
+          <p>Logo após subir um morro, há um redutor de velocidade. O abrigo está logo à esquerda após esse morro. Há um letreiro com o nome da ONG.</p>
+          
+          <p><strong>A entrada do abrigo é na Rua Estrada da Amora, esquina com a Estrada do Cedro. A casa é azul.</strong> Evite o caminho alternativo pela estrada com pontilhado azul no mapa.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="patinhas">
+    <img src="assets/header-footer/mts-patinhas.png" alt="Patinhas">
+  </div>
+  
+  <footer>
+    <div class="footer-columns">
+      <div>
+        <strong>Contatos</strong><br/>
+        <br/> Telefone: (17) 99235-1150
+        <br /> Instagram: <a href="https://www.instagram.com/abrigoanjosfieis/" target="_blank">@abrigoanjosfieis</a>
+      </div>
+      <div>
+        <strong>Mapa do Site</strong><br/>
+        <br/><a href="index.html">Home</a>
+        <br/><a href="caes.html">Cães</a>
+        <br/><a href="doacao.html">Doação</a>
+        <br/><a href="sobre.html">Sobre</a>
+      </div>
+    </div>
+    <p style="margin-top: 1rem;">ONG Abrigo Anjos Fiéis - 2025</p>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mainNav = document.getElementById('mainNav');
+
+    mobileMenuToggle.addEventListener('click', function() {
+      mainNav.classList.toggle('active');
+      mobileMenuToggle.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+      if (!mobileMenuToggle.contains(event.target) && !mainNav.contains(event.target)) {
+        mainNav.classList.remove('active');
+        mobileMenuToggle.classList.remove('active');
+      }
+    });
+
+    // Close menu when clicking on a nav link
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mainNav.classList.remove('active');
+        mobileMenuToggle.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>

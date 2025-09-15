@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG Abrigo Anjos Fiéis - Sobre</title>
+    <link rel="stylesheet" href="sobre.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>ONG Abrigo Anjos Fiéis</h1>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="caes.html">Cães</a></li>
+                    <li><a href="doacao.html">Doação</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="sobre">
+            <img src="assets/header-footer/patinhas.png" alt="Pegadas decorativas" class="pegadas">
+            <div class="content-wrapper">
+                <h2>Sobre a ONG</h2>
+                <p>Quando Giovana morava na cidade, possuía 25 cachorros em sua casa e 20 em outra, após cuidar, com muito amor e carinho de uma senhora sem família, Giovana recebeu uma casa de herança e enxergou isso como uma oportunidade de poder conceder aos cachorros um lar melhor, adquirindo uma chácara, que é o atual lugar da ONG.</p>
+                <p>Sua chácara já foi lar de quase 300 cães, atualmente conta com 160 a 170. A maioria dos cachorros possuíam doenças, deficiência física ou maus tratos; muitos deles são idosos tornando-os mais difíceis de doar. Ainda assim, nos últimos meses foram realizadas 46 adoções dos cães mais novos. Para que a adoção ocorra, as famílias passam por uma minientrevista (para saber se os cães serão utilizados como cão de guarda, vigia ou segurança, pois a Giovana repudia este tipo de ação) com a dona da ONG, antes mesmo de continuarem com o processo.</p>
+            </div>
+        </section>
+
+        <section class="objetivo">
+            <div class="content-wrapper">
+                <h2>Objetivo</h2>
+                <div class="image-text-block">
+                    <div class="image-container">
+                        <img src="assets/sobre/cachorro-casinha.jpeg" alt="Cachorro e Casinha">
+                    </div>
+                    <div class="text-content">
+                        <p>Como objetivo primordial, a organização busca encontrar e resgatar cães de rua, doentes, feridos ou abandonados e cães que sofrem maus tratos em condições críticas. O abrigo guarda os animais, alimenta, cuida e dá todo o que precisa, inclusive os cuidados básicos como água, comida, moradia e muito carinho e amor.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="desafios">
+            <div class="content-wrapper">
+                <h2>Desafios</h2>
+                <div class="image-text-block reverse">
+                    <div class="text-content">
+                        <p>Atualmente os animais comem em média 5 sacos de ração por dia, então contam com doações da comunidade para ajudar, fora as medicações e vacinas; tornando o dia a dia mais difícil do que já é. O local é limpo todos os dias para que o ambiente seja livre do foco dos mosquitos da dengue, doenças e carrapatos.</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="assets/sobre/saco-racao.jpeg" alt="Saco de Ração">
+                    </div>
+                </div>
+                <img src="assets/header-footer/patinhas.png" alt="Pegadas" class="pegadas-direita">
+            </div>
+        </section>
+    </main>
+
+    <div class="patinhas">
+        <img src="assets/header-footer/mts-patinhas.png" alt="Patinhas">
+    </div>
+    
+    <footer>
+        <div class="footer-columns">
+            <div>
+                <strong>Contatos</strong><br/>
+                <br/> Telefone: (17) 99235-1150
+                <br /> Instagram: <a href="https://www.instagram.com/abrigoanjosfieis/" target="_blank">@abrigoanjosfieis</a>
+            </div>
+            <div>
+                <strong>Mapa do Site</strong><br/>
+                <br/><a href="index.html">Home</a>
+                <br/><a href="caes.html">Cães</a>
+                <br/><a href="doacao.html">Doação</a>
+                <br/><a href="sobre.html">Sobre</a>
+            </div>
+        </div>
+        <p style="margin-top: 1rem;">ONG Abrigo Anjos Fiéis - 2025</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mainNav = document.getElementById('mainNav');
+
+        mobileMenuToggle.addEventListener('click', function() {
+            mainNav.classList.toggle('active');
+            mobileMenuToggle.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!mobileMenuToggle.contains(event.target) && !mainNav.contains(event.target)) {
+                mainNav.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
+            }
+        });
+
+        // Close menu when clicking on a nav link
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

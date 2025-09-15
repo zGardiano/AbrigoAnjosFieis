@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="caes.css" />
+    <title>ONG Abrigo Anjos Fiéis - Cães</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>ONG Abrigo Anjos Fiéis</h1>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="caes.html">Cães</a></li>
+                    <li><a href="doacao.html">Doação</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="secao-introducao">
+            <h2>Os Cães Para Adoção e os Adotados</h2>
+            <p>
+                Como o local abriga mais de 150 cães atualmente, e já abrigou quase 300,
+                muitos já foram adotados e muitos estão aguardando ansiosamente pelo seu novo lar,
+                alguns dos que foram adotados, infelizmente retornaram para a chácara.
+            </p>
+            <p>Giovana procura lares decentes e que possuem muito amor, quase sempre registra fotos das famílias que os estão adotando e adora receber.</p>
+
+            <h3 class="instagram-frase">
+                Fique por dentro de tudo, acompanhando pelo instagram do Abrigo!
+            </h3>
+        </section>
+        <section class="instagram-page">
+            <img src="assets/header-footer/patinhas.png" alt="Pegadas decorativas" class="pegadas">
+            <a href="https://www.instagram.com/abrigoanjosfieis" target="_blank" class="instagram-link">
+                <img src="assets/caes/insta-page.png" alt="Página Instagram" class="insta-page">
+            </a>
+            <img src="assets/header-footer/patinhas.png" alt="Pegadas" class="pegadas-direita">
+        </section>
+        
+    </main>
+
+    <div class="patinhas">
+        <img src="assets/header-footer/mts-patinhas.png" alt="Patinhas">
+    </div>
+
+    <footer>
+        <div class="footer-columns">
+            <div>
+                <strong>Contatos</strong><br/>
+                <br/> Telefone: (17) 99235-1150
+                <br /> Instagram: <a href="https://www.instagram.com/abrigoanjosfieis/" target="_blank">@abrigoanjosfieis</a>
+            </div>
+            <div>
+                <strong>Mapa do Site</strong><br/>
+                <br/><a href="index.html">Home</a>
+                <br/><a href="caes.html">Cães</a>
+                <br/><a href="doacao.html">Doação</a>
+                <br/><a href="sobre.html">Sobre</a>
+            </div>
+        </div>
+        <p style="margin-top: 1rem;">ONG Abrigo Anjos Fiéis - 2025</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mainNav = document.getElementById('mainNav');
+
+        mobileMenuToggle.addEventListener('click', function() {
+            mainNav.classList.toggle('active');
+            mobileMenuToggle.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!mobileMenuToggle.contains(event.target) && !mainNav.contains(event.target)) {
+                mainNav.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
+            }
+        });
+
+        // Close menu when clicking on a nav link
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

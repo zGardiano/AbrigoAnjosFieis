@@ -1,0 +1,433 @@
+/* Reset e configurações base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+  color: #000;
+  line-height: 1.6;
+}
+
+p {
+  text-align: justify;
+}
+
+/* Header responsivo */
+header {
+  background-color: #05393E;
+  color: white;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Mobile menu toggle */
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.mobile-menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: #17838c;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #0D5D63;
+  transform: translateY(-2px);
+}
+
+/* Content */
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+/* Introdução */
+.introducao {
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.introducao h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: #05393E;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.introducao p {
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  color: #333;
+  line-height: 1.8;
+}
+
+/* Pegadas decorativas */
+.pegadas {
+  position: absolute;
+  left: -150px;
+  top: 20%;
+  opacity: 0.6;
+  max-width: 100px;
+  height: auto;
+}
+
+.pegadas-direita {
+  position: absolute;
+  right: -150px;
+  top: 60%;
+  opacity: 0.6;
+  max-width: 100px;
+  height: auto;
+}
+
+/* Seção de doação */
+.doacao-section {
+  margin: 4rem 0;
+}
+
+.qrcode-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.qr-wrapper {
+  flex-shrink: 0;
+}
+
+.qrcode {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.qrcode:hover {
+  transform: scale(1.05);
+}
+
+.qrcode-texto {
+  flex: 1;
+  max-width: 500px;
+}
+
+.qrcode-texto h3 {
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  color: #05393E;
+  margin-bottom: 1rem;
+}
+
+.qrcode-texto p {
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.pix-info {
+  background: #05393E;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+/* Seção de visita */
+.visit-section {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.visit-section h3 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  color: #05393E;
+  margin-bottom: 2rem;
+}
+
+.mapa-container {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.mapa {
+  max-width: 100%;
+  width: 600px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.mapa:hover {
+  transform: scale(1.02);
+}
+
+.endereco-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.endereco, .como-chegar {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.endereco h4, .como-chegar h4 {
+  color: #05393E;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.endereco p, .como-chegar p {
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.endereco strong {
+  color: #05393E;
+}
+
+/* Patinhas decorativas */
+.patinhas {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.patinhas img {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.7;
+}
+
+/* Footer */
+footer {
+  background-color: #05393E;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-columns > div {
+  flex: 1;
+  min-width: 200px;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 1rem;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top: 1rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #17838c;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #0D5D63;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .mobile-menu-toggle {
+    display: flex;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  nav {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    background-color: #17838c;
+    border-radius: 8px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+  }
+  
+  nav.active ul {
+    max-height: 300px;
+  }
+  
+  nav ul li a {
+    background-color: transparent;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  
+  nav ul li:last-child a {
+    border-bottom: none;
+  }
+  
+  header h1 {
+    font-size: 1.3rem;
+  }
+  
+  .pegadas,
+  .pegadas-direita {
+    display: none;
+  }
+  
+  .qrcode-container {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+  
+  .qrcode-texto {
+    text-align: center;
+  }
+  
+  .qrcode-texto p {
+    text-align: justify;
+  }
+  
+  .endereco-info {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .endereco, .como-chegar {
+    padding: 1.5rem;
+  }
+  
+  .footer-columns {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 1rem;
+  }
+  
+  .introducao {
+    margin-bottom: 2rem;
+  }
+  
+  .qrcode-container {
+    padding: 1.5rem 1rem;
+  }
+  
+  .qrcode {
+    max-width: 200px;
+  }
+  
+  .endereco, .como-chegar {
+    padding: 1rem;
+  }
+}
+
+/* Animações suaves */
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
