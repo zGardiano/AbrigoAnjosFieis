@@ -239,13 +239,14 @@ nav ul li a:hover {
 .instagramAbrigo img {
   width: 30px;
   height: 30px;
-  filter: brightness(0) invert(1);
+  /* Removido filtro que pode estar escondendo o ícone */
 }
 
 /* Patinhas decorativas */
 .patinhas {
   text-align: center;
-  margin: 3rem 0;
+  margin: 0;
+  padding: 0;
 }
 
 .patinhas img {

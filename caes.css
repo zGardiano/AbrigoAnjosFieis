@@ -179,7 +179,8 @@ nav ul li a:hover {
 /* Patinhas decorativas */
 .patinhas {
   text-align: center;
-  margin: 3rem 0;
+  margin: 0;
+  padding: 0;
 }
 
 .patinhas img {
